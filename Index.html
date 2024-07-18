@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milk Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+<!-- component -->
+<nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+    <a class="text-3xl font-bold leading-none" href="#">
+        <svg class="h-10" alt="logo" viewBox="0 0 10240 10240">
+            <path xmlns="http://www.w3.org/2000/svg" d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -346 228 -454 118 -210 319 -515 340 -515 4 0 40 18 80 40 230 128 521 255 787 343 118 40 336 102 395 113 28 5 53 11 105 23 25 5 59 12 75 15 17 3 41 8 55 11 34 7 274 43 335 50 152 18 372 29 565 29 194 0 481 -11 489 -19 2 -3 -3 -6 -12 -6 -9 -1 -20 -2 -24 -3 -33 -8 -73 -16 -98 -21 -61 -10 -264 -56 -390 -90 -649 -170 -1243 -437 -1770 -794 -60 -41 -121 -82 -134 -93 l-24 -18 124 -59 c109 -52 282 -116 404 -149 92 -26 192 -51 220 -55 17 -3 64 -12 105 -21 71 -14 151 -28 230 -41 19 -3 46 -7 60 -10 14 -2 45 -7 70 -10 25 -4 56 -8 70 -10 14 -2 53 -7 88 -10 35 -4 71 -8 81 -10 10 -2 51 -6 92 -9 101 -9 141 -14 147 -21 3 -3 -15 -5 -39 -6 -24 0 -52 -2 -62 -4 -21 -4 -139 -12 -307 -22 -242 -14 -700 -7 -880 13 -41 4 -187 27 -250 39 -125 23 -274 68 -373 111 -43 19 -81 34 -86 34 -4 0 -16 -8 -27 -17 -10 -10 -37 -33 -59 -52 -166 -141 -422 -395 -592 -586 -228 -257 -536 -672 -688 -925 -21 -36 -43 -66 -47 -68 -4 -2 -8 -7 -8 -11 0 -5 -24 -48 -54 -97 -156 -261 -493 -915 -480 -935 2 -3 47 -21 101 -38 54 -18 107 -36 118 -41 58 -25 458 -138 640 -181 118 -27 126 -29 155 -35 14 -2 45 -9 70 -14 66 -15 137 -28 300 -55 37 -7 248 -33 305 -39 28 -3 84 -9 125 -13 163 -16 792 -8 913 12 12 2 58 9 102 15 248 35 423 76 665 157 58 19 134 46 170 60 86 33 344 156 348 166 2 4 8 7 13 7 14 0 205 116 303 184 180 126 287 216 466 396 282 281 511 593 775 1055 43 75 178 347 225 455 100 227 236 602 286 790 59 220 95 364 120 485 6 28 45 245 50 275 2 14 7 41 10 60 3 19 8 49 10 65 2 17 6 46 9 65 15 100 35 262 40 335 3 39 8 89 10 112 22 225 33 803 21 1043 -3 41 -7 129 -11 195 -3 66 -8 136 -10 155 -2 19 -6 76 -10 125 -3 50 -8 101 -10 115 -2 14 -6 57 -10 95 -7 72 -12 113 -20 175 -2 19 -7 55 -10 80 -6 46 -43 295 -51 340 -2 14 -9 54 -15 90 -5 36 -16 97 -24 135 -8 39 -17 84 -20 100 -12 68 -18 97 -50 248 -19 87 -47 204 -61 260 -14 56 -27 109 -29 117 -30 147 -232 810 -253 832 -4 4 -7 -23 -8 -60z"></path>
+        </svg>
+    </a>
+    <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+            <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </button>
+    </div>
+    <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+        <li class="text-gray-300">
+            
+        </li>
+        <li><a class="text-sm text-gray-400" href="#AboutUs">About Us</a></li>
+        <li class="text-gray-300">
+            
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#services">Services</a></li>
+        <li class="text-gray-300">
+            
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#milk-features">Features</a></li>
+        <li class="text-gray-300">
+            
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#Contact">Contact</a></li>
+    </ul>
+    <a style="margin-right: 100px;" class=" lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-600 hover:bg-gray-600 text-sm text-white font-bold  rounded-xl transition duration-200" href="#Contact">Get Started</a>
+</nav>
+<div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-white opacity-25"></div>
+    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
+                    <path xmlns="http://www.w3.org/2000/svg" d="M8284 9162 c-2 -207 -55 -427 -161 -667 -147 -333 -404 -644 -733 -886 -81 -59 -247 -169 -256 -169 -3 0 -18 -9 -34 -20 -26 -19 -344 -180 -354 -180 -3 0 -29 -11 -58 -24 -227 -101 -642 -225 -973 -290 -125 -25 -397 -70 -480 -80 -22 -3 -76 -9 -120 -15 -100 -13 -142 -17 -357 -36 -29 -2 -98 -7 -153 -10 -267 -15 -436 -28 -525 -40 -14 -2 -45 -7 -70 -10 -59 -8 -99 -14 -130 -20 -14 -3 -41 -7 -60 -11 -19 -3 -39 -7 -45 -8 -5 -2 -28 -6 -50 -10 -234 -45 -617 -165 -822 -257 -23 -10 -45 -19 -48 -19 -7 0 -284 -138 -340 -170 -631 -355 -1107 -842 -1402 -1432 -159 -320 -251 -633 -308 -1056 -26 -190 -27 -635 -1 -832 3 -19 7 -59 10 -89 4 -30 11 -84 17 -120 6 -36 12 -77 14 -91 7 -43 33 -174 39 -190 3 -8 7 -28 9 -45 6 -35 52 -221 72 -285 7 -25 23 -79 35 -120 29 -99 118 -283 189 -389 67 -103 203 -244 286 -298 75 -49 178 -103 196 -103 16 0 27 16 77 110 124 231 304 529 485 800 82 124 153 227 157 230 3 3 28 36 54 74 116 167 384 497 546 671 148 160 448 450 560 542 14 12 54 45 90 75 88 73 219 172 313 238 42 29 77 57 77 62 0 5 -13 34 -29 66 -69 137 -149 405 -181 602 -7 41 -14 82 -15 90 -1 8 -6 46 -10 83 -3 37 -8 77 -10 88 -2 11 -7 65 -11 122 -3 56 -8 104 -9 107 -2 3 0 12 5 19 6 10 10 8 15 -10 10 -34 167 -346 228 -454 118 -210 319 -515 340 -515 4 0 40 18 80 40 230 128 521 255 787 343 118 40 336 102 395 113 28 5 53 11 105 23 25 5 59 12 75 15 17 3 41 8 55 11 34 7 274 43 335 50 152 18 372 29 565 29 194 0 481 -11 489 -19 2 -3 -3 -6 -12 -6 -9 -1 -20 -2 -24 -3 -33 -8 -73 -16 -98 -21 -61 -10 -264 -56 -390 -90 -649 -170 -1243 -437 -1770 -794 -60 -41 -121 -82 -134 -93 l-24 -18 124 -59 c109 -52 282 -116 404 -149 92 -26 192 -51 220 -55 17 -3 64 -12 105 -21 71 -14 151 -28 230 -41 19 -3 46 -7 60 -10 14 -2 45 -7 70 -10 25 -4 56 -8 70 -10 14 -2 53 -7 88 -10 35 -4 71 -8 81 -10 10 -2 51 -6 92 -9 101 -9 141 -14 147 -21 3 -3 -15 -5 -39 -6 -24 0 -52 -2 -62 -4 -21 -4 -139 -12 -307 -22 -242 -14 -700 -7 -880 13 -41 4 -187 27 -250 39 -125 23 -274 68 -373 111 -43 19 -81 34 -86 34 -4 0 -16 -8 -27 -17 -10 -10 -37 -33 -59 -52 -166 -141 -422 -395 -592 -586 -228 -257 -536 -672 -688 -925 -21 -36 -43 -66 -47 -68 -4 -2 -8 -7 -8 -11 0 -5 -24 -48 -54 -97 -156 -261 -493 -915 -480 -935 2 -3 47 -21 101 -38 54 -18 107 -36 118 -41 58 -25 458 -138 640 -181 118 -27 126 -29 155 -35 14 -2 45 -9 70 -14 66 -15 137 -28 300 -55 37 -7 248 -33 305 -39 28 -3 84 -9 125 -13 163 -16 792 -8 913 12 12 2 58 9 102 15 248 35 423 76 665 157 58 19 134 46 170 60 86 33 344 156 348 166 2 4 8 7 13 7 14 0 205 116 303 184 180 126 287 216 466 396 282 281 511 593 775 1055 43 75 178 347 225 455 100 227 236 602 286 790 59 220 95 364 120 485 6 28 45 245 50 275 2 14 7 41 10 60 3 19 8 49 10 65 2 17 6 46 9 65 15 100 35 262 40 335 3 39 8 89 10 112 22 225 33 803 21 1043 -3 41 -7 129 -11 195 -3 66 -8 136 -10 155 -2 19 -6 76 -10 125 -3 50 -8 101 -10 115 -2 14 -6 57 -10 95 -7 72 -12 113 -20 175 -2 19 -7 55 -10 80 -6 46 -43 295 -51 340 -2 14 -9 54 -15 90 -5 36 -16 97 -24 135 -8 39 -17 84 -20 100 -12 68 -18 97 -50 248 -19 87 -47 204 -61 260 -14 56 -27 109 -29 117 -30 147 -232 810 -253 832 -4 4 -7 -23 -8 -60z"></path>
+                </svg>
+            </a>
+            <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div>
+            <ul>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-blue-600 rounded" href="#">Home</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-blue-600 rounded" href="#AboutUs">About Us</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-blue-600 rounded" href="#services">Services</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-blue-600 rounded" href="#milk-features">Features</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-600 hover:text-blue-600 rounded" href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-auto">
+           
+            <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright © 2021</span>
+            </p>
+        </div>
+    </nav>
+</div>
+</body>
+
+<script>
+// Burger menus
+document.addEventListener('DOMContentLoaded', function() {
+// open
+const burger = document.querySelectorAll('.navbar-burger');
+const menu = document.querySelectorAll('.navbar-menu');
+
+if (burger.length && menu.length) {
+    for (var i = 0; i < burger.length; i++) {
+        burger[i].addEventListener('click', function() {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        });
+    }
+}
+
+// close
+const close = document.querySelectorAll('.navbar-close');
+const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+if (close.length) {
+    for (var i = 0; i < close.length; i++) {
+        close[i].addEventListener('click', function() {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        });
+    }
+}
+
+if (backdrop.length) {
+    for (var i = 0; i < backdrop.length; i++) {
+        backdrop[i].addEventListener('click', function() {
+            for (var j = 0; j < menu.length; j++) {
+                menu[j].classList.toggle('hidden');
+            }
+        });
+    }
+}
+});
+</script>  
+<div class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold text-teal-600 ">Milkpromise Collects <span class="gradienttext">Fresh Milk</span> From Farmers</h1>
+        <p class="mt-4 text-lg text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#Contact" class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-gray-600 hover:bg-teal-700 mt-6">Learn More</a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://www.milkpromise.com/images/cow-img.svg" alt="Cow Image" class="w-full md:w-auto rounded-lg">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl">OUR<span class="gradienttext"> Partners</span></h2>
+    <section class="customer-logos slider">
+      <div class="slide"><img src="https://animationvisarts.com/wp-content/uploads/2023/12/Frame-32-6.png" class="w-full"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaEXzEYfAxBadp3RwEsjdQ9iBtXZL3RYRJUw&s" class="w-full"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7JGBgBcmgYJTAkNq9diGzqy2IjKMLDhX7pg&s" class="w-full"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPRR4XBal83bwZZ0Ccki-AKZ7IRuDuITRmzg&s" class="w-full"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-M3Mvlq6YvmI6wkfBwBwfl1DyPXZRbhjcJ9EfQAhR4k7I9p7F5io-EgzV3yN3nMn52oo&usqp=CAU" class="w-full"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBOoG4MujtMt1oZ0qTCNQnnqS5Q-tqKzUAg&s" class="w-full"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsNzE6u4B9hfxNuyMdIQG3vSjdUUP_nPUe3Q&s" class="w-full"></div>
+    </section>
+  </div>
+  <section id="milk-features" class="py-8 sm:py-10 lg:py-16">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl">Why Choose <span class="gradienttext">Our Milk?</span></h2>
+        <p class="mt-4 text-base leading-7 text-black sm:mt-8">Discover the benefits of our high-quality milk products</p>
+      </div>
+      <div class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
+        
+        <!-- Feature 1 -->
+        <div class="md:p-8 lg:p-14 flex flex-col justify-center items-center">
+          <div class="w-14 h-14 rounded-full bg-purple-200 flex justify-center items-center">
+            <i class="fa-solid fa-leaf text-3xl text-gray-900"></i>
+          </div>
+          <h3 class="mt-12 text-xl font-bold text-gray-900">Organic Quality</h3>
+          <p class="mt-5 text-base text-gray-600">Our milk is sourced from organic farms ensuring the highest standards of quality and freshness.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
+          <div class="w-14 h-14 rounded-full bg-teal-200 flex justify-center items-center">
+            <i class="fa-solid fa-tractor text-3xl text-gray-900"></i>
+          </div>
+          <h3 class="mt-12 text-xl font-bold text-gray-900">Sustainably Sourced</h3>
+          <p class="mt-5 text-base text-gray-600">We partner with farmers who prioritize sustainability and animal welfare.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center">
+          <div class="w-14 h-14 rounded-full bg-yellow-200 flex justify-center items-center">
+            <i class="fa-solid fa-vial text-3xl text-gray-900"></i>
+          </div>
+          <h3 class="mt-12 text-xl font-bold text-gray-900">Nutrient Rich</h3>
+          <p class="mt-5 text-base text-gray-600">Packed with essential vitamins and minerals to keep you healthy and strong.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="md:p-8 lg:p-14 md:border-t md:border-gray-200 flex flex-col justify-center items-center">
+          <div class="w-14 h-14 rounded-full bg-red-200 flex justify-center items-center">
+            <i class="fa-solid fa-thermometer-half text-3xl text-gray-900"></i>
+          </div>
+          <h3 class="mt-12 text-xl font-bold text-gray-900">Freshness Guaranteed</h3>
+          <p class="mt-5 text-base text-gray-600">Our rigorous quality control ensures that every bottle of milk is fresh and delicious.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+          <div class="w-14 h-14 rounded-full bg-green-200 flex justify-center items-center">
+            <i class="fa-solid fa-heart text-3xl text-gray-900"></i>
+          </div>
+          <h3 class="mt-12 text-xl font-bold text-gray-900">Family-Friendly</h3>
+          <p class="mt-5 text-base text-gray-600">Perfect for the whole family, from toddlers to adults.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center">
+          <div class="w-14 h-14 rounded-full bg-orange-200 flex justify-center items-center">
+            <i class="fa-solid fa-dollar-sign text-3xl text-gray-900"></i>
+          </div>
+          <h3 class="mt-12 text-xl font-bold text-gray-900">Affordable</h3>
+          <p class="mt-5 text-base text-gray-600">High-quality milk at a price that won't break the bank.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container space-y-6 bg-slate-50 py-8 mx-auto md:py-12 lg:py-24">
+    <div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+        <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl font-bold">Dairy <span class="gradienttext"> Services </span></h2>
+        <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">Discover the premium services we offer to deliver the best dairy products to your table.</p>
+    </div>
+    <div class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+        <!-- Service 1: Fresh Milk Delivery -->
+        <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <i class="fa-solid fa-truck text-3xl text-gray-900"></i>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Fresh Milk Delivery</h3>
+                    <p class="text-sm text-muted-foreground">Daily fresh milk delivery straight to your doorstep, ensuring you get the best quality.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 2: Cheese Production -->
+        <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <i class="fa-solid fa-cheese text-3xl text-gray-900"></i>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Cheese Production</h3>
+                    <p class="text-sm text-muted-foreground">High-quality, artisanal cheese made from the freshest milk.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 3: Yogurt Making -->
+        <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <i class="fa-solid fa-ice-cream text-3xl text-gray-900"></i>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Yogurt Making</h3>
+                    <p class="text-sm text-muted-foreground">Delicious, creamy yogurt produced with the highest standards of quality.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 4: Butter Production -->
+        <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <i class="fa-solid fa-pizza-slice text-3xl text-gray-900"></i>                <div class="space-y-2">
+                    <h3 class="font-bold">Butter Production</h3>
+                    <p class="text-sm text-muted-foreground">Pure, rich butter made from fresh cream.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 5: Dairy Farm Tours -->
+        <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <i class="fa-solid fa-tractor text-3xl text-gray-900"></i>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Dairy Farm Tours</h3>
+                    <p class="text-sm text-muted-foreground">Experience our farm firsthand and learn about our dairy production process.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Service 6: Nutritional Consulting -->
+        <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+            <div class="flex h-[180px] flex-col justify-between rounded-md p-6">
+                <i class="fa-solid fa-apple-alt text-3xl text-gray-900"></i>
+                <div class="space-y-2">
+                    <h3 class="font-bold">Nutritional Consulting</h3>
+                    <p class="text-sm text-muted-foreground">Expert advice on how to incorporate dairy into a healthy diet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="AboutUs" class="bg-white dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                Quality You Can <span class="gradienttext">Trust</span>
+            </h2>
+            <p class="mb-4">
+                We are dedicated to providing fresh and organic dairy products. Our team consists of experienced farmers, nutritionists, and quality control experts. Small enough to ensure personal attention to every detail, yet big enough to meet your demands with the highest standards.
+            </p>
+            <p>
+                Our dairy products are produced with the utmost care, ensuring quality, freshness, and sustainability. Experience the difference with our farm-to-table approach.
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://clipart-library.com/2023/haalipular2-clipart-xl.png" alt="dairy farm 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPwBQPf50SVR7Myl9C2yYqc9NJXcFXq-PsQ&s" alt="dairy farm 2">
+        </div>
+    </div>
+</section>
+
+
+<section  id="Contact" class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"> <span class="gradienttext">Contact</span> Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+        <form action="#" class="space-y-8">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+            </div>
+            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+        </form>
+    </div>
+  </section>
+  <section class="bg-white dark:bg-gray-900">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <img class="w-full dark:hidden" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QCjRXhpZgAASUkqAAgAAAAEAA4BAgBNAAAAPgAAABIBAwABAAAAAQAAABoBBQABAAAAiwAAABsBBQABAAAAkwAAAAAAAABnbGFzcyBvZiBtaWxrIGFuZCBib3R0bGUgb2YgbWlsayBvbiB0aGUgd29vZCB0YWJsZS4gd2l0aCBjb3B5IHNwYWNlIGZvciB0ZXh0LiwBAAABAAAALAEAAAEAAAD/7QCQUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAHMcAlAAC3BvbmctcGhvdG85HAJ4AE1nbGFzcyBvZiBtaWxrIGFuZCBib3R0bGUgb2YgbWlsayBvbiB0aGUgd29vZCB0YWJsZS4gd2l0aCBjb3B5IHNwYWNlIGZvciB0ZXh0LhwCbgAMR2V0dHkgSW1hZ2VzAP/hBUVodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iPgoJPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KCQk8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIgICB4bWxuczpHZXR0eUltYWdlc0dJRlQ9Imh0dHA6Ly94bXAuZ2V0dHlpbWFnZXMuY29tL2dpZnQvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwbHVzPSJodHRwOi8vbnMudXNlcGx1cy5vcmcvbGRmL3htcC8xLjAvIiAgeG1sbnM6aXB0Y0V4dD0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcEV4dC8yMDA4LTAyLTI5LyIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgcGhvdG9zaG9wOkNyZWRpdD0iR2V0dHkgSW1hZ2VzIiBHZXR0eUltYWdlc0dJRlQ6QXNzZXRJRD0iODU0Mjk2NjUwIiB4bXBSaWdodHM6V2ViU3RhdGVtZW50PSJodHRwczovL3d3dy5nZXR0eWltYWdlcy5jb20vZXVsYT91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFtcDt1dG1fY2FtcGFpZ249aXB0Y3VybCIgPgo8ZGM6Y3JlYXRvcj48cmRmOlNlcT48cmRmOmxpPnBvbmctcGhvdG85PC9yZGY6bGk+PC9yZGY6U2VxPjwvZGM6Y3JlYXRvcj48ZGM6ZGVzY3JpcHRpb24+PHJkZjpBbHQ+PHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5nbGFzcyBvZiBtaWxrIGFuZCBib3R0bGUgb2YgbWlsayBvbiB0aGUgd29vZCB0YWJsZS4gd2l0aCBjb3B5IHNwYWNlIGZvciB0ZXh0LjwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOmRlc2NyaXB0aW9uPgo8cGx1czpMaWNlbnNvcj48cmRmOlNlcT48cmRmOmxpIHJkZjpwYXJzZVR5cGU9J1Jlc291cmNlJz48cGx1czpMaWNlbnNvclVSTD5odHRwczovL3d3dy5nZXR0eWltYWdlcy5jb20vZGV0YWlsLzg1NDI5NjY1MD91dG1fbWVkaXVtPW9yZ2FuaWMmYW1wO3V0bV9zb3VyY2U9Z29vZ2xlJmFtcDt1dG1fY2FtcGFpZ249aXB0Y3VybDwvcGx1czpMaWNlbnNvclVSTD48L3JkZjpsaT48L3JkZjpTZXE+PC9wbHVzOkxpY2Vuc29yPgoJCTwvcmRmOkRlc2NyaXB0aW9uPgoJPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0idyI/Pgr/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3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" alt="Dairy Products Image">
+        <div class="mt-4 md:mt-0">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Discover the <span class="gradienttext"> Freshness </span> of Our Dairy Products</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Our dairy products are sourced from the best farms, ensuring you get the freshest and most nutritious options available. From milk to cheese and everything in between, experience the difference quality makes.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="flex flex-col space-y-10 justify-center m-10">
+
+    <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+        <a class="hover:text-gray-900" href="#Home">Home</a>
+        <a class="hover:text-gray-900" href="#AboutUs">About</a>
+        <a class="hover:text-gray-900" href="#services">Services</a>
+        <a class="hover:text-gray-900" href="#milk-features">Features</a>
+        <a class="hover:text-gray-900" href="#Contact">Contact</a>
+        
+    </nav>
+
+    <div class="flex justify-center space-x-5">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+        </a>
+        <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+        </a>
+    </div>
+    <p class="text-center text-gray-700 font-medium">&copy; 2022 Company Ltd. All rights reservered.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
